@@ -27,6 +27,7 @@
     font-weight: 600;
     font-size: 21px;
     cursor: pointer;
+    color: white;
 }
 
 .nav_title{
@@ -62,6 +63,7 @@
     font-weight: 600;
     margin-left: 40px;
     font-family: futura;
+    color:white;
 }
 
 .title_2{
@@ -70,6 +72,7 @@
     font-weight: bold;
     margin-left: 40px;
     font-family: futura;
+    color:white;
 }
 
 .btn_group{
@@ -125,6 +128,7 @@
     font-size: 58px;
     padding-top: 110px;
     padding-bottom: 110px;
+    color:white;
 }
 
 .matrix{
@@ -148,12 +152,16 @@
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 10px;
+    color:white;
+
 }
 
 .matrix_text{
     font-family: futura;
     font-size: 23px;
     margin-top: 50px;
+    color:white;
+
 }
 
 .NFTs{
@@ -178,6 +186,7 @@
     width: 40%;
     margin-left: 30px;
     margin-top: 70px;
+    color:white;
 }
 
 .nft_1{
@@ -219,6 +228,8 @@
     font-size: 58px;
     padding-top: 110px;
     padding-bottom: 80px;
+    color:white;
+
 }
 
 .vision_t2{
@@ -228,6 +239,7 @@
     font-family: futura;
     margin-bottom: 30px;
     /* margin-bottom: 10px; */
+    color:white;
 }
 
 .vision_text{
@@ -262,6 +274,7 @@
     margin-bottom: 30px;
     padding-top: 80px;
     padding-bottom: 40px;
+    color:white;
 }
 
 .audit_line{
@@ -277,6 +290,7 @@
     font-size: x-large;
     margin-left: 30px;
     cursor: pointer;
+    color:white;
 }
 
 .sonic_logo{
@@ -317,7 +331,7 @@
 .footer_title{
     padding-top: 50px;
     font-size: 28px;
-
+    color:white;
 }
 
 .footer_m{
