@@ -1,9 +1,9 @@
-
 .top_bg{
     background-image: url('../assets/images/bg_top.png');
     background-repeat: no-repeat;
-    background-size: 100% 92%;
-    background-color: rgb(10, 3, 27);
+    /* height: 110vh; */
+    background-size: 100% 100vh;
+    background-color: #000000;
 }
 
 .navi{
@@ -15,6 +15,10 @@
     padding-right: 40px;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .sub_navi{
     display: flex;
     align-items: center;
@@ -22,6 +26,7 @@
     font-family: futura;
     font-weight: 600;
     font-size: 21px;
+    cursor: pointer;
 }
 
 .nav_title{
@@ -69,7 +74,8 @@
 .btn_group{
     margin-top: 50px;
     margin-left: 10px;
-    padding-bottom: 160px;
+    padding-bottom: 80px;
+    /* margin-bottom: 100px; */
 }
 
 .btn_top{
@@ -93,4 +99,107 @@
     background-color:rgb(0, 0, 0);
     border: 3px solid rgb(255, 255, 255);
     color:white;
+}
+
+/* .bg_2{
+    background-image: url('../assets/images/bg_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+} */
+
+.bg_2{
+    background:  url('../assets/images/bg_2.png');
+    background-repeat: no-repeat;
+    /* height: 110vh; */
+    background-size: cover;
+    /* background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255)); */
+}
+
+
+.title_3{
+    text-align: center;
+    font-family: futura;
+    font-weight: bold;
+    font-size: 58px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.matrix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.matrix_box{
+    margin-right: 45px;
+    width: 50%;
+}
+
+.matrix_right{
+    width: 40%;
+    /* margin-left: 20px; */
+}
+
+.matrix_title{
+    font-family: futura;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.matrix_text{
+    font-family: futura;
+    font-size: 23px;
+    margin-top: 50px;
+}
+
+.NFTs{
+    display: flex;
+    /* align-items: center; */
+    margin-top: 125px;
+    padding-bottom: 60px;
+}
+
+.nft_left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+}
+
+.nft{
+    margin-left: 54px;
+    margin-bottom: 40px;
+}
+
+.nft_right{
+    width: 40%;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+.nft_1{
+    background:  url('../assets/images/M1.png');
+    background-size: cover;
+}
+.nft_2{
+    background:  url('../assets/images/W4.png');
+    background-size: cover;
+}
+.nft_3{
+    background:  url('../assets/images/M2.png');
+    background-size: cover;
+}
+.nft_4{
+    background:  url('../assets/images/M6.png');
+    background-size: cover;
+}
+.nft_5{
+    background:  url('../assets/images/W3.png');
+    background-size: cover;
+}
+.nft_6{
+    background:  url('../assets/images/M5.png');
+    background-size: cover;
 }

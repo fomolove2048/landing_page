@@ -8,7 +8,7 @@ const Top = () => {
     return (
         <div className={styles.top_bg}>
             <div className={styles.navi}>
-                <Image src={logo_text} alt='logo' height={40} />
+                <Image src={logo_text} alt='logo' height={40} className={styles.logo} />
                 <div className={styles.sub_navi}>
                     <div className={styles.nav_title}>Overview</div>
                     <div className={styles.nav_title}>FoMoney Collection</div>
