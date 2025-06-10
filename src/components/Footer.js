@@ -8,7 +8,7 @@ const Footer = ()=>{
         <div className={styles.footer_bg}>
             <div className={styles.columns}>
             <div className={styles.footer_l}>
-                <Image className={styles.footer_logo} src={logo_text} alt='logo_text' height={40} />
+                <Image className={styles.footer_logo} src={logo_text} alt='logo_text' height={30} />
                 <div className={styles.footer_text}>The first truly autonomous,</div>
                 <div className={styles.footer_text}>liquid on-chain world</div>
             </div>
@@ -31,7 +31,7 @@ const Footer = ()=>{
                 </div>
             </div>
             </div>
-            <div className={styles.copyright}>© 2025 FoMoney.io</div>
+            <div className={styles.copyright}>© 2025 FoMoney</div>
         </div>
     )
 }
