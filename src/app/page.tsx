@@ -1,6 +1,7 @@
 import Top from '@/components/Top';
 import Gameplay from '@/components/Gameplay';
 import Vision from '@/components/Vision';
+import Audit from '@/components/Audit';
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Top />
       <Gameplay />
       <Vision />
+      <Audit />
     </>
   );
 }
