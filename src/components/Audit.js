@@ -8,6 +8,9 @@ const Audit = ()=>{
     const handleClick = ()=>{
         window.open('https://beosin.com/audits/Fomoney_202505231107.pdf')
     }
+    const handleSonic = ()=>{
+        window.open('https://www.sonic.game/')
+    }
     return (
         <div className={styles.audit_bg}>
             <div className={styles.audit_t1}>Audited by</div>
@@ -16,7 +19,7 @@ const Audit = ()=>{
                 <div className={styles.audit_text} onClick={handleClick}>View Audit Report</div>
             </div>
             <div className={styles.audit_t1}>Built on</div>
-            <Image className={styles.sonic_logo} src={sonic_logo} alt='sonic_logo' height={100} />
+            <Image onClick={handleSonic} className={styles.sonic_logo} src={sonic_logo} alt='sonic_logo' height={100} />
             <div className={styles.audit_bottom}></div>
         </div>
     )

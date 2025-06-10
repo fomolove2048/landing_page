@@ -282,8 +282,64 @@
 .sonic_logo{
     display: block;
     margin: 0 auto;
+    cursor: pointer;;
 }
 
 .audit_bottom{
     padding-bottom: 80px;
+}
+
+.footer_bg{
+    background: rgb(32, 32, 32);
+    font-family: futura;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_l{
+    padding-top: 50px;
+    color:rgb(163, 163, 163);
+    width: 40%;
+    padding-left: 40px;
+}
+
+.footer_logo{
+    margin-bottom: 30px;
+}
+
+.footer_text{
+    font-size: large;
+}
+
+.footer_title{
+    padding-top: 50px;
+    font-size: 28px;
+
+}
+
+.footer_m{
+    margin-right: 320px;
+}
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: large;
+    color:rgb(163, 163, 163);
+    height:150px;
+    justify-content: space-around;
+}
+
+.footer_r{
+    margin-right: 50px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
