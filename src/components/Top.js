@@ -4,7 +4,9 @@ import Image from 'next/image';
 import logo_text from '@/assets/images/logo_text.png';
 
 const Top = () => {
-
+    const handlePlay = ()=>{
+        window.open('https://www.fomoney.io/')
+    }
     return (
         <div className={styles.top_bg}>
             <div className={styles.navi}>
@@ -13,7 +15,7 @@ const Top = () => {
                     <div className={styles.nav_title}>Overview</div>
                     <div className={styles.nav_title}>FoMoney Collection</div>
                 </div>
-                <button className={styles.nav_button}>Launch Game</button>
+                <button onClick={handlePlay} className={styles.nav_button}>Launch Game</button>
             </div>
             <div className={styles.top_title}>
                 <div>Shape an Autonomous </div>
@@ -21,7 +23,7 @@ const Top = () => {
             </div>
             <div className={styles.title_2}>Stake / Play / Earn -- all in a single liquid economy</div>
             <div className={styles.btn_group}>
-                <button className={styles.btn_top}>Play FoMoney</button>
+                <button onClick={handlePlay} className={styles.btn_top}>Play FoMoney</button>
                 <button className={styles.btn_top}>Check $FoMoney</button>
             </div>
 

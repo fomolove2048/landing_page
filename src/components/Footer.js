@@ -4,6 +4,27 @@ import Image from 'next/image';
 import logo_text from '@/assets/images/logo_text.png'
 
 const Footer = ()=>{
+    const handleTwitter = ()=>{
+        window.open('https://x.com/Fomoney2048')
+    }
+    const handleGitbook = ()=>{
+        window.open('https://fomoney.gitbook.io/fomoney-litepaper')
+    }
+    const handleTelegram = ()=>{
+        window.open('https://t.me/fomoneyofficial')
+    }
+    const handleYoutube = ()=>{
+        window.open('https://www.youtube.com/@FoMoney2048')
+    }
+    const handleGame = ()=>{
+        window.scrollTo(0,820)
+    }
+    const handleVision = ()=>{
+        window.scrollTo(0,2300)
+    }
+    const handleAudit = ()=>{
+        window.scrollTo(0,3000)
+    }
     return(
         <div className={styles.footer_bg}>
             <div className={styles.columns}>
@@ -15,19 +36,19 @@ const Footer = ()=>{
             <div className={styles.footer_m}>
                 <div className={styles.footer_title}>Sitemap</div>
                 <div className={styles.footer_column}>
-                    <div>Gameplay & Economy</div>
-                    <div>Vision</div>
-                    <div>Audit</div>
-                    <div>Built on Sonic SVM</div>
+                    <div onClick={handleGame}>Gameplay & Economy</div>
+                    <div onClick={handleVision}>Vision</div>
+                    <div onClick={handleAudit}>Audit</div>
+                    <div onClick={handleAudit}>Built on Sonic SVM</div>
                 </div>
             </div>
             <div className={styles.footer_r}>
                 <div className={styles.footer_title}>Social Media</div>
                 <div className={styles.footer_column}>
-                    <div>Twitter</div>
-                    <div>Gitbook</div>
-                    <div>Telegram</div>
-                    <div>Youtube</div>
+                    <div onClick={handleTwitter}>Twitter</div>
+                    <div onClick={handleGitbook}>Gitbook</div>
+                    <div onClick={handleTelegram}>Telegram</div>
+                    <div onClick={handleYoutube}>Youtube</div>
                 </div>
             </div>
             </div>

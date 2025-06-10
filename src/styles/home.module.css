@@ -48,13 +48,14 @@
     font-weight: 600;
     text-align: center;
     cursor: pointer;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.2);;
 }
 
 .nav_button:hover{
     color: white;
     background-color:rgb(0, 0, 0);
     border: 3px solid rgb(255, 255, 255);
-
+    box-shadow:  0px 0px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 .top_title{
@@ -94,6 +95,7 @@
     /* border-width: 0px; */
     border: 3px solid rgb(0, 0, 0);
     border-radius: 100px;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.2);;
     color: black;
     /* text-align: center; */
     cursor: pointer;
@@ -102,6 +104,7 @@
 .btn_top:hover{
     background-color:rgb(0, 0, 0);
     border: 3px solid rgb(255, 255, 255);
+    box-shadow:  0px 0px 5px 3px rgba(0, 0, 0, 0.2);;
     color:white;
 }
 
@@ -134,12 +137,37 @@
 .matrix{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    height:500px;
 }
 
 .matrix_box{
-    margin-right: 45px;
+    background: url('../assets/images/matrix_box.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* margin-right: 45px; */
+    height:98%;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+@font-face {
+    font-family: verminVibes;
+    src:url('../assets/font/vermin_vibes.woff2') format('woff2'),
+        url('../assets/font/vermin_vibes.woff') format('woff'),
+        url('../assets/font/vermin_vibes.ttf') format('truetype');
+}
+
+.matrix_cd{
+    font-family: verminVibes;
+    font-size: 120px;
+    color: rgb(126, 226, 187);
+
 }
 
 .matrix_right{
@@ -346,6 +374,7 @@
     color:rgb(163, 163, 163);
     height:170px;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .footer_r{
