@@ -23,17 +23,18 @@ const TopCollection = () => {
     useEffect(() => {
         const container = containerRef.current;
         let animationFrame;
-        let scrollLeft = 0;
+
+        const scrollSpeed = 1;
 
         const animate = () => {
-            if (container && !container.matches(':hover')) {
-                scrollLeft += 0.5;
-                if (scrollLeft >= container.scrollWidth - container.clientWidth) {
-                    scrollLeft = 0;
-                }
-                container.scrollLeft = scrollLeft;
+          if (container && !container.matches(':hover')) {
+            container.scrollLeft += scrollSpeed;
+
+            if (container.scrollLeft >= container.scrollWidth / 2) {
+              container.scrollLeft = 0;
             }
-            animationFrame = requestAnimationFrame(animate);
+          }
+          animationFrame = requestAnimationFrame(animate);
         };
 
         animate();
@@ -60,7 +61,7 @@ const TopCollection = () => {
             </div>
             <div className={styles.title1}>FoMoney Collection</div>
             <div className={styles.carousel} ref={containerRef}>
-                {images.map((src, idx) => (
+                {[...images, ...images].map((src, idx) => (
                     <div key={idx} className={styles.imageWrapper}>
                         <Image
                             src={src}
