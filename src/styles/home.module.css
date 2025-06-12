@@ -242,6 +242,20 @@
     background-size: cover;
 }
 
+.flywheel{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    height: 500px;
+    width: 93%;
+    background: black;
+    display: block;
+    margin: 0 auto;
+}
+
+.game_bottom{
+    padding-bottom: 100px;
+}
+
 .vision_bg{
     background:  url('../assets/images/bg_vision.png');
     background-repeat: no-repeat;

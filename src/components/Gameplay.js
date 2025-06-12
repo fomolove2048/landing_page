@@ -25,24 +25,12 @@ const Gameplay = () => {
             </div>
             <div className={styles.NFTs}>
                 <div className={styles.nft_left}>
-                    <div>
-                        <Image className={`${styles.nft} ${styles.nft_1}`} src={NFT_box} alt='w1' height={205} width={205} />
-                    </div>
-                    <div>
-                        <Image className={`${styles.nft} ${styles.nft_2}`} src={NFT_box} alt='w1' height={205} width={205} />
-                    </div>
-                    <div>
-                        <Image className={`${styles.nft} ${styles.nft_3}`} src={NFT_box} alt='w1' height={205} width={205} />
-                    </div>
-                    <div>
-                        <Image className={`${styles.nft} ${styles.nft_4}`} src={NFT_box} alt='w1' height={205} width={205} />
-                    </div>
-                    <div>
-                        <Image className={`${styles.nft} ${styles.nft_5}`} src={NFT_box} alt='w1' height={205} width={205} />
-                    </div>
-                    <div>
-                        <Image className={`${styles.nft} ${styles.nft_6}`} src={NFT_box} alt='w1' height={205} width={205} />
-                    </div>
+                    <Image className={`${styles.nft} ${styles.nft_1}`} src={NFT_box} alt='w1' height={205} width={205} />
+                    <Image className={`${styles.nft} ${styles.nft_2}`} src={NFT_box} alt='w1' height={205} width={205} />
+                    <Image className={`${styles.nft} ${styles.nft_3}`} src={NFT_box} alt='w1' height={205} width={205} />
+                    <Image className={`${styles.nft} ${styles.nft_4}`} src={NFT_box} alt='w1' height={205} width={205} />
+                    <Image className={`${styles.nft} ${styles.nft_5}`} src={NFT_box} alt='w1' height={205} width={205} />
+                    <Image className={`${styles.nft} ${styles.nft_6}`} src={NFT_box} alt='w1' height={205} width={205} />
                 </div>
                 <div className={styles.nft_right}>
                     <div className={styles.matrix_title}>FoMoney NFT</div>
@@ -50,8 +38,17 @@ const Gameplay = () => {
                 </div>
             </div>
             <div className={styles.flywheel}>
+                <div className={styles.fly_line1}>
 
+                </div>
+                <div className={styles.fly_line2}>
+
+                </div>
+                <div className={styles.fly_line3}>
+
+                </div>
             </div>
+            <div className={styles.game_bottom}></div>
         </div>
     )
 }
