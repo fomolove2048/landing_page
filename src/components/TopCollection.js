@@ -75,8 +75,8 @@ const TopCollection = () => {
                 ))}
             </div>
             <div className={styles.top_buttons}>
-                <button className={styles.top_btn}>Mint NFT</button>
-                <button className={styles.top_btn}>Trade</button>
+                <button className={styles.top_btn_l}>Mint NFT</button>
+                <button className={styles.top_btn_r}>Trade</button>
             </div>
         </div>
     )

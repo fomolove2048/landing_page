@@ -29,8 +29,8 @@ const Top = () => {
             </div>
             <div className={styles.title_2}>Stake / Play / Earn -- all in a single liquid economy</div>
             <div className={styles.btn_group}>
-                <button onClick={handlePlay} className={styles.btn_top}>Play FoMoney</button>
-                <button className={styles.btn_top}>Check $FoMoney</button>
+                <button onClick={handlePlay} className={styles.btn_top_l}>Play FoMoney</button>
+                <button className={styles.btn_top_r}>Check $FoMoney</button>
             </div>
 
         </div>

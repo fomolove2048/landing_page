@@ -125,7 +125,7 @@
     padding-bottom: 50px;
 }
 
-.top_btn{
+.top_btn_l{
     margin-left: 30px;
     margin-right: 30px;
     height: 65px;
@@ -143,11 +143,30 @@
     cursor: pointer;
 }
 
-.top_btn:hover{
+.top_btn_r{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 65px;
+    width: 300px;
+    font-size:25px;
+    font-weight: 550;
+    font-family: futura;
+    /* border-width: 0px; */
+    border-radius: 100px;
     background-color:rgb(0, 0, 0);
     border: 3px solid rgb(255, 255, 255);
     box-shadow:  0px 0px 5px 3px rgba(0, 0, 0, 0.2);;
     color:white;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+.top_btn_l:hover{
+    transform: scale(1.1);
+}
+
+.top_btn_r:hover{
+    transform: scale(1.1);
 }
 
 .ass_bg{
