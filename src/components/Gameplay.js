@@ -4,7 +4,7 @@ import styles from '@/styles/home.module.css';
 import Image from 'next/image';
 import NFT_box from '@/assets/images/NFT_box.png';
 import pills from '@/assets/images/pills.png';
-
+import flywheel from '@/assets/images/flywheel.png';
 
 
 const Gameplay = () => {
@@ -38,15 +38,7 @@ const Gameplay = () => {
                 </div>
             </div>
             <div className={styles.flywheel}>
-                <div className={styles.fly_line1}>
-
-                </div>
-                <div className={styles.fly_line2}>
-
-                </div>
-                <div className={styles.fly_line3}>
-
-                </div>
+                <Image src={flywheel} alt='flywheel' height={460} className={styles.fly} />
             </div>
             <div className={styles.game_bottom}></div>
         </div>

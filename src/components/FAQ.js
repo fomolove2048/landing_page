@@ -40,7 +40,7 @@ const FAQ = ()=>{
                         <Image src={down} alt='down' height={15} className={hide1?'':styles.hidden} onClick={()=>setHide1(false)} />
                         <Image src={up} alt='up' height={15} className={hide1?styles.hidden:''} onClick={()=>setHide1(true)}  />
                     </div>
-                    <div className={`${styles.answer} ${hide1?styles.hidden:''}`}>Total supply: 9,000 NFTs, with three rarity tiers: Common, Rare, and Legendary</div>
+                    <div className={`${styles.answer} ${hide1?styles.hidden:''}`}><span className={styles.bold}>Total supply</span>: 9,000 NFTs, with three rarity tiers: Common, Rare, and Legendary</div>
                     <div className={styles.devide}></div>
                     <div className={styles.faq_line}>
                         <div>How do I mint a FoMoney NFT?</div>
