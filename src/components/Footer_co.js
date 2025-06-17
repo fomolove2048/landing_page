@@ -36,7 +36,7 @@ const Footer = ()=>{
             <div className={styles.footer_m}>
                 <div className={styles.footer_title}>Sitemap</div>
                 <div className={styles.footer_column_middle}>
-                    <div onClick={handleAsset}>Assets Details</div>
+                    <div onClick={handleAsset}>Asset Details</div>
                     <div onClick={handleRM}>Roadmap</div>
                     <div onClick={handleFaq}>FAQ</div>
                 </div>

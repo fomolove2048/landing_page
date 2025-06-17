@@ -11,7 +11,7 @@ const Assets = ()=>{
 
     return (
         <div className={styles.ass_bg}>
-            <div className={styles.title2}>Assets Details</div>
+            <div className={styles.title2}>Asset Details</div>
             <div className={styles.title3}>Everything you need to know about FoMoney Collection</div>
             <div className={styles.infos}>
                 <Image className={styles.info} src={fomo_info1} alt='info1' height={120} />
