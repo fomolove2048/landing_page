@@ -2,6 +2,7 @@ import TopCollection from '@/components/TopCollection';
 import Footer from '@/components/Footer';
 import Assets from '@/components/Assets';
 import Roadmap from '@/components/Roadmap';
+import FAQ from '@/components/FAQ';
 
 const Collection = ()=>{
     return (
@@ -9,6 +10,7 @@ const Collection = ()=>{
             <TopCollection />
             <Assets />
             <Roadmap />
+            <FAQ />
             <Footer />
         </>
     )
