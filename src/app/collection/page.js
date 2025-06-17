@@ -1,5 +1,5 @@
 import TopCollection from '@/components/TopCollection';
-import Footer from '@/components/Footer';
+import Footer from '@/components/Footer_co';
 import Assets from '@/components/Assets';
 import Roadmap from '@/components/Roadmap';
 import FAQ from '@/components/FAQ';
