@@ -3,8 +3,12 @@ import styles from '@/styles/home.module.css';
 import Image from 'next/image';
 import logo_text from '@/assets/images/logo_text.png';
 import { useRouter } from 'next/navigation';
+import Modal from '@/components/Modal';
+import { useState } from 'react';
 
 const Top = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalContent, setModalContent] = useState();
     const router = useRouter();
 
     const handlePlay = ()=>{
@@ -13,6 +17,18 @@ const Top = () => {
     const handleCollection = ()=>{
         router.push('/collection');
     }
+
+    const handleCheck = ()=>{
+        setIsModalOpen(true);
+        setModalContent(
+            <div>
+                <div className={styles.modal}>
+                    <div className={styles.modal_line}>Coming soon...</div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className={styles.top_bg}>
             <div className={styles.navi}>
@@ -30,9 +46,11 @@ const Top = () => {
             <div className={styles.title_2}>Stake / Play / Earn -- all in a single liquid economy</div>
             <div className={styles.btn_group}>
                 <button onClick={handlePlay} className={styles.btn_top_l}>Play FoMoney</button>
-                <button className={styles.btn_top_r}>Check $FoMoney</button>
+                <button onClick={handleCheck} className={styles.btn_top_r}>Check $FoMoney</button>
             </div>
-
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                {modalContent}
+            </Modal>
         </div>
     )
 }

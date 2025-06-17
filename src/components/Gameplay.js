@@ -33,7 +33,7 @@ const Gameplay = () => {
                     <Image className={`${styles.nft} ${styles.nft_6}`} src={NFT_box} alt='w1' height={205} width={205} />
                 </div>
                 <div className={styles.nft_right}>
-                    <div className={styles.matrix_title}>FoMoney NFT</div>
+                    <div className={styles.matrix_title}>FoMoney Collection</div>
                     <div className={styles.matrix_text}>The leading semi-fungible collection on Sonic SVM, merging play-to-earn mechanics with fully on-chain autonomous world. It combines the instant liquidity of memecoins with the exclusivity of NFTs.</div>
                 </div>
             </div>

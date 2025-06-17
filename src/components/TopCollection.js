@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '@/styles/collection.module.css';
 import logo_text from '@/assets/images/logo_text.png';
 import { useRouter } from 'next/navigation';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef,useState } from 'react';
 import M1 from '@/assets/images/M1.png';
 import M2 from '@/assets/images/M2.png';
 import M3 from '@/assets/images/M3.png';
@@ -16,10 +16,14 @@ import W3 from '@/assets/images/W3.png';
 import W4 from '@/assets/images/W4.png';
 import W5 from '@/assets/images/W5.png';
 import NFT_box from '@/assets/images/NFT_box.png';
+import Modal from '@/components/Modal';
 
 const TopCollection = () => {
     const router = useRouter();
     const containerRef = useRef(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalContent, setModalContent] = useState();
+
     useEffect(() => {
         const container = containerRef.current;
         let animationFrame;
@@ -49,6 +53,19 @@ const TopCollection = () => {
     const handleOverview = () => {
         router.push('/');
     }
+
+
+    const handleComingSoon = ()=>{
+        setIsModalOpen(true);
+        setModalContent(
+            <div>
+                <div className={styles.modal}>
+                    <div className={styles.modal_line}>Coming soon...</div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className={styles.top_bg}>
             <div className={styles.navi}>
@@ -75,9 +92,12 @@ const TopCollection = () => {
                 ))}
             </div>
             <div className={styles.top_buttons}>
-                <button className={styles.top_btn_l}>Mint NFT</button>
-                <button className={styles.top_btn_r}>Trade</button>
+                <button className={styles.top_btn_l} onClick={handleComingSoon}>Mint NFT</button>
+                <button className={styles.top_btn_r} onClick={handleComingSoon}>Trade</button>
             </div>
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                {modalContent}
+            </Modal>
         </div>
     )
 }
